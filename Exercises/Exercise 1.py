@@ -10,7 +10,7 @@
 # Question 2: Integer Operations
 
 # TODO: Ask the user for the length of a rectangle and store it as an integer
-length = int( )
+
 # TODO: Ask the user for the width of a rectangle and store it as an integer
 
 # TODO: Calculate the area of the rectangle
