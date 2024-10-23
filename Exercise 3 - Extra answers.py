@@ -20,7 +20,14 @@ print(calculate_discount(250,15))
 #       - For domestic shipping: $5 per kg.
 #       - For international shipping: $15 per kg.
 def shipping_cost(weight,destination):
+    destination = input("Enter destination, domestic or international? ")
+
     if destination == "domestic":
+        print(weight*5)
+    elif destination == "international":
+        print(weight*15)
+    else:
+        pass
 
 # TODO: Call the 'shipping_cost' function with a weight of 3kg and an "international" destination, and print the result.
 
