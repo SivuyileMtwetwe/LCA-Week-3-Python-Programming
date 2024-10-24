@@ -1,28 +1,28 @@
-# # #------------------------------------------------------------------------------------
-# # #Task 1: Function with Loop and Conditional Logic
+# #------------------------------------------------------------------------------------
+# #Task 1: Function with Loop and Conditional Logic
 
-# # # TODO: Define a function called 'check_attendance' that takes a list of names (students) and a list of absentees.
-# # #       It should return a list of names of students who are absent.
-# # def check_attendance(students,absentees):
-# #     absente_students = []
-# #     present_students = []
+# # TODO: Define a function called 'check_attendance' that takes a list of names (students) and a list of absentees.
+# #       It should return a list of names of students who are absent.
+# def check_attendance(students,absentees):
+#     absente_students = []
+#     present_students = []
 
-# #     for student in students:
-# #         if student in absentees:
-# #             absente_students.append(student)
-# #         else:
-# #             present_students.append(student) 
+#     for student in students:
+#         if student in absentees:
+#             absente_students.append(student)
+#         else:
+#             present_students.append(student) 
 
-# #     return absente_students,present_students
+#     return absente_students,present_students
 
-# # # TODO: Call 'check_attendance' with a list of ["Alice", "Bob", "Charlie", "David"] 
-# # #       and a list of absentees ["Bob", "David"], and print the result.
-# # students = ["Alice", "Bob", "Charlie", "David"]
-# # absentees = ["Bob", "David"]
-# # present, absent = check_attendance(students, absentees)
+# # TODO: Call 'check_attendance' with a list of ["Alice", "Bob", "Charlie", "David"] 
+# #       and a list of absentees ["Bob", "David"], and print the result.
+# students = ["Alice", "Bob", "Charlie", "David"]
+# absentees = ["Bob", "David"]
+# present, absent = check_attendance(students, absentees)
 
-# # print("Present students:", present)
-# # print("Absent students:", absent)
+# print("Present students:", present)
+# print("Absent students:", absent)
 # #------------------------------------------------------------------------------------
 # # Task 2: Function for Real-Life Data Processing
 
@@ -93,25 +93,47 @@
 # print(f"The total cost of the trip is: ${round(cost,2)}")
 
 # TODO: Create a dictionary with grocery items as keys and their quantities in stock as values.
-grocery_inventory = {
-    "Apples": 50,
-    "Bananas": 30,
-    "Tomatoes": 25,
-    "Bread": 15,
-    "Milk": 10
-}
+# grocery_inventory = {
+#     "Apples": 50,
+#     "Bananas": 30,
+#     "Tomatoes": 25,
+#     "Bread": 15,
+#     "Milk": 10
+# }
 
-# TODO: Use a for loop to print each item and its quantity in stock.
-for item in grocery_inventory:
-    print(item)
-# TODO: Calculate and print the total number of items in stock (sum of all values in the dictionary).
-
+# # TODO: Use a for loop to print each item and its quantity in stock.
+# for item,quantity in grocery_inventory.items():
+#     print(f"{item}: {quantity}")
+# # TODO: Calculate and print the total number of items in stock (sum of all values in the dictionary).
+# total= sum(grocery_inventory.values())
+# print(total)
+    
 
 # #------------------------------------------------------------------------------------
 # # Task 5: Using a while loop for banking (Real-life Scenario: ATM Pin Retry System)
 
 # # TODO: Ask the user to input their PIN.
-# # TODO: If the PIN is incorrect, ask the user to try again, but only allow 3 attempts.
+
+pin = "123456"
+max_attempts = 3
+attempts = 0
+
+while attempts < max_attempts:
+    guessed_password = input("Enter your pin: ")
+    
+    if guessed_password == pin:
+        print("Access Granted")
+        break
+    else:
+# # TODO: If the PIN is incorrect, ask the user to try again, but only allow 3 attempts.        
+        attempts += 1
+        print("Incorrect pin. Please try again.")
+        if attempts == max_attempts:
+            print("You have reached the maximum number of incorrect guesses.")
+            print("Account Locked")
+        
+
+
 # # TODO: After 3 incorrect attempts, print "Account Locked". If the PIN is correct, print "Access Granted".
 
 # correct_pin = "1234"
