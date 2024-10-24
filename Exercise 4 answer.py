@@ -7,7 +7,8 @@ for i in fruits:
     print(i)
 
 #-------------------------------------------------------------------------
-# Question 2: Using a while loop for countdown
+# Question 2: Using a while loo
+# p for countdown
 
 # TODO: Use a while loop to create a countdown from 5 to 1
 j = 6
