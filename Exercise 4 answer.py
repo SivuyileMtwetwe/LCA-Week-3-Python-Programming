@@ -1,41 +1,41 @@
-# # Question 1: Using a for loop with a list
+# Question 1: Using a for loop with a list
 
-# # TODO: Create a list of fruits
-# fruits = ["apple", "orange", "banana", "grape", "lemon","mango","strawberry", "naartjies"]
-# # TODO: Use a for loop to print each fruit in the list
-# # for i in fruits:
-#     # print(i)
+# TODO: Create a list of fruits
+fruits = ["apple", "orange", "banana", "grape", "lemon","mango","strawberry", "naartjies"]
+# TODO: Use a for loop to print each fruit in the list
+for i in fruits:
+    print(i)
 
-# #-------------------------------------------------------------------------
-# # Question 2: Using a while loop for countdown
+#-------------------------------------------------------------------------
+# Question 2: Using a while loop for countdown
 
-# # TODO: Use a while loop to create a countdown from 5 to 1
-# # j = 6
+# TODO: Use a while loop to create a countdown from 5 to 1
+j = 6
 
-# # while j>1:
-# #     j-=1
-# #     print(j)
+while j>1:
+    j-=1
+    print(j)
     
 
-# #-------------------------------------------------------------------------
-# # Question 3: Using a for loop with range()
+#-------------------------------------------------------------------------
+# Question 3: Using a for loop with range()
 
-# # TODO: Use a for loop to print the first 10 square numbers
-# # for i in range(1,11):
-# #     print(i**2)
-# #-------------------------------------------------------------------------
+# TODO: Use a for loop to print the first 10 square numbers
+for i in range(1,11):
+    print(i**2)
+#-------------------------------------------------------------------------
 
-# # Question 4: Using the random module
+# Question 4: Using the random module
 
-# # TODO: Import the random module
-# import random
-# # TODO: Create a list of colors
-# colours = ["red","pink","yellow", "brown","blue","grey"]
-# # TODO: Use a for loop to select and print 3 random colors from the list
-# for _ in range(3):
-#     random_colours = random.choice(colours)
+# TODO: Import the random module
+import random
+# TODO: Create a list of colors
+colours = ["red","pink","yellow", "brown","blue","grey"]
+# TODO: Use a for loop to select and print 3 random colors from the list
+for _ in range(3):
+    random_colours = random.choice(colours)
 
-#     print(random_colours)
+    print(random_colours)
 #-------------------------------------------------------------------------
 # Question 5: Creating and using a custom module
 
@@ -91,6 +91,6 @@ def calculator():
             print("Result:", math_operations.multiply(num1, num2))
         elif choice == '4':
             print("Result:", math_operations.divide(num1, num2))
-            
+
 if __name__ == "__main__":
     calculator()
