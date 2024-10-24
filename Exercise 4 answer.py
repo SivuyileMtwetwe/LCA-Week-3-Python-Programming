@@ -92,5 +92,5 @@ def calculator():
         elif choice == '4':
             print("Result:", math_operations.divide(num1, num2))
 
-if __name__ == "__main__":
-    calculator()
+
+calculator()
