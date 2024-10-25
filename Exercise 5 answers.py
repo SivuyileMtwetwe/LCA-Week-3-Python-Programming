@@ -87,7 +87,38 @@ fruits_and_color = {
     "Papaya": "Orange",
     "Pineapple": "Yellow",
     "Watermelon": "Red",
+    "Apple": "Red/Green",
+    "Grapes": "Green/Purple",
+    "Peach": "Orange/Yellow",
+    "Pear": "Green/Yellow",
+    "Plum": "Purple",
+    "Pomegranate": "Red",
+    "Kiwi": "Green",
+    "Dragonfruit": "Pink/White",
+    "Passionfruit": "Purple",
+    "Apricot": "Orange",
+    "Mulberry": "Purple/Red",
+    "Guava": "Green/Pink",
+    "Jackfruit": "Yellow/Green",
+    "Lychee": "Red",
+    "Tangerine": "Orange",
+    "Nectarine": "Orange",
+    "Persimmon": "Orange",
+    "Fig": "Purple/Green",
+    "Quince": "Yellow",
+    "Starfruit": "Yellow",
+    "Avocado": "Green",
+    "Coconut": "Brown",
+    "Durian": "Green",
+    "Honeydew": "Green",
+    "Rambutan": "Red",
+    "Boysenberry": "Purple",
+    "Elderberry": "Black",
+    "Gooseberry": "Green/Yellow",
+    "Currant": "Red/Black",
+    "Jujube": "Red/Brown",
 }
+
 
 # TODO: Print all the fruits (keys)
 for fruit in fruits_and_color.keys():
@@ -99,4 +130,9 @@ for color in fruits_and_color.values():
 for fruit,color in fruits_and_color.items():
     print(f"{fruit}: {color}")
 # TODO: Check if a fruit is in the dictionary and print its color
-print(fruits_and_color["Banana"])
+fruit = str(input("Enter a fruit:").capitalize())
+if fruit in fruits_and_color:
+    print(f"{fruit} is in the dictionary and its color is {fruits_and_color[fruit]}")
+else:
+    print(f"{fruit} is not in the dictionary")
+ 
